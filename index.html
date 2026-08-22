@@ -43,14 +43,50 @@
         header p {
             font-size: 1.15rem;
             color: #94a3b8;
-            max-width: 650px;
+            max-width: 750px;
             margin: 0 auto;
         }
 
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 3rem 1.5rem;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .credentials-bar {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .credentials-bar h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .credentials-bar p {
+            color: #475569;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
         .grid {
@@ -155,6 +191,20 @@
     </header>
 
     <div class="container">
+
+        <!-- EXPERTISE BANNER FROM CV -->
+        <div class="credentials-bar">
+            <h3>Engineering & Industrial Capabilities</h3>
+            <p>Led by a Mechanical Engineer (B.Sc. CUET) with extensive experience managing high-speed FMCG processing & packaging lines (PepsiCo brands), industrial gas plant commissioning, thermal systems, and utility management.</p>
+            <div class="tags">
+                <span class="tag">Packaging & Process Lines</span>
+                <span class="tag">Utilities (Air, N₂, Steam, Water)</span>
+                <span class="tag">Root Cause Analysis (RCA)</span>
+                <span class="tag">OEM Spare Parts Strategy</span>
+                <span class="tag">Plant Audit Readiness</span>
+            </div>
+        </div>
+
         <div class="grid">
             
             <!-- SECTION 1: Line / Equipment -->
@@ -164,11 +214,11 @@
                         <h2>1. Connect for Line or Equipment</h2>
                     </div>
                     <div class="card-body">
-                        <p>Request an on-site visit or technical support for equipment diagnostics, breakdown troubleshooting, or system performance audits.</p>
+                        <p>Request an on-site visit or technical support for machinery breakdown diagnostics, line modifications, thermal utility audits, or productivity improvements.</p>
                         <ul>
-                            <li>On-site machinery troubleshooting & RCA</li>
-                            <li>Line performance & bottleneck optimization</li>
-                            <li>Preventive maintenance & audit visits</li>
+                            <li>On-site machinery troubleshooting & Root Cause Analysis</li>
+                            <li>Line bottleneck reduction & performance optimization</li>
+                            <li>Preventive maintenance, utility & safety audit visits</li>
                         </ul>
                     </div>
                 </div>
@@ -180,7 +230,7 @@
                     </div>
                     <div class="form-group">
                         <label for="diag-equipment">Equipment / Line Issue Details</label>
-                        <textarea id="diag-equipment" name="Issue Details" rows="3" required placeholder="Describe machine type and technical needs..."></textarea>
+                        <textarea id="diag-equipment" name="Issue Details" rows="3" required placeholder="Describe machine type, system issue, or audit needs..."></textarea>
                     </div>
                     <div class="form-group">
                         <label for="diag-date">Preferred Visit Date</label>
@@ -197,11 +247,11 @@
                         <h2>2. Connect for Spare Parts</h2>
                     </div>
                     <div class="card-body">
-                        <p>Submit part specifications or details to source high-grade mechanical spares, machinery components, or custom industrial equipment.</p>
+                        <p>Inquire for mechanical spares, high-precision OEM specifications, or specialty components for packaging, processing, and gas plant machinery.</p>
                         <ul>
-                            <li>Packaging & processing machine spares sourcing</li>
-                            <li>Component verification & specification matching</li>
-                            <li>Industrial supply & procurement support</li>
+                            <li>Processing & packaging machinery spares sourcing</li>
+                            <li>OEM specification matching & component verification</li>
+                            <li>Critical inventory procurement assistance</li>
                         </ul>
                     </div>
                 </div>
@@ -213,7 +263,7 @@
                     </div>
                     <div class="form-group">
                         <label for="part-details">Spare Part / Specification Details</label>
-                        <textarea id="part-details" name="Part Specifications" rows="3" required placeholder="Include part number, brand, model, or specs..."></textarea>
+                        <textarea id="part-details" name="Part Specifications" rows="3" required placeholder="Include part number, brand, model, or technical specs..."></textarea>
                     </div>
                     <div class="form-group">
                         <label for="part-qty">Quantity Needed</label>
