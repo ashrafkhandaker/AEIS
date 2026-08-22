@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AEIS — Ashraf Engineering & Industrial Solution</title>
+    <title>AEIS — Industrial Solutions & Equipment Services</title>
     <style>
         :root {
             --primary: #0f172a;
             --accent: #2563eb;
+            --accent-hover: #1d4ed8;
             --bg: #f8fafc;
-            --text: #334155;
+            --text: #1e293b;
             --card-bg: #ffffff;
+            --border: #e2e8f0;
         }
 
         * {
@@ -29,19 +31,19 @@
         header {
             background-color: var(--primary);
             color: white;
-            padding: 4rem 2rem;
+            padding: 3.5rem 1.5rem;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.5rem;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #94a3b8;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
@@ -51,50 +53,90 @@
             padding: 3rem 1.5rem;
         }
 
-        .section-title {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .services-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 1.8rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--accent);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        .card h3 {
+        .card-header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-header h2 {
+            font-size: 1.5rem;
             color: var(--primary);
-            margin-bottom: 0.75rem;
         }
 
-        .cta-section {
-            background-color: var(--primary);
-            color: white;
-            padding: 3rem;
-            border-radius: 8px;
-            text-align: center;
+        .card-body p {
+            margin-bottom: 1rem;
+            color: #475569;
+        }
+
+        .card-body ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #334155;
+        }
+
+        .card-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--primary);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            font-size: 0.95rem;
         }
 
         .btn {
             display: inline-block;
+            width: 100%;
+            text-align: center;
             background-color: var(--accent);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.8rem;
+            border: none;
             border-radius: 5px;
-            text-decoration: none;
             font-weight: bold;
-            margin-top: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
         }
 
         footer {
@@ -102,46 +144,91 @@
             padding: 2rem;
             color: #64748b;
             font-size: 0.9rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ashraf Engineering & Industrial Solution</h1>
-        <p>Optimizing Industrial Performance | Plant Reliability | Automation Solutions</p>
+        <h1>Ashraf Engineering & Industrial Solution (AEIS)</h1>
+        <p>Plant Diagnostics, Technical Audits & Equipment Procurement Services</p>
     </header>
 
     <div class="container">
-        <h2 class="section-title">Core Services</h2>
-        <div class="services-grid">
+        <div class="grid">
+            
+            <!-- SECTION 1: Diagnostic & Plant Visit -->
             <div class="card">
-                <h3>Plant Maintenance</h3>
-                <p>Preventive and predictive maintenance strategy design, shutdown planning, and breakdown reduction.</p>
-            </div>
-            <div class="card">
-                <h3>Root Cause Analysis</h3>
-                <p>Structured problem-solving (5-Why, Fishbone, FMEA) targeted at high-speed production line downtime.</p>
-            </div>
-            <div class="card">
-                <h3>Process Engineering</h3>
-                <p>Bottleneck identification, line efficiency improvements, and overall equipment effectiveness (OEE) optimization.</p>
-            </div>
-            <div class="card">
-                <h3>Utilities & Automation</h3>
-                <p>Optimization of utility systems including nitrogen generators, compressors, boilers, and packaging lines.</p>
-            </div>
-        </div>
+                <div>
+                    <div class="card-header">
+                        <h2>1. Schedule Equipment Diagnostic & Plant Visit</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Request an on-site visit or technical consultation to resolve operational breakdowns, improve line efficiency, or perform root-cause diagnostics on your machinery.</p>
+                        <ul>
+                            <li>On-site machinery troubleshooting & RCA</li>
+                            <li>Preventive maintenance audit</li>
+                            <li>Utilities & processing line optimization</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="cta-section">
-            <h2>Ready to Optimize Your Plant Operations?</h2>
-            <p>Get in touch for consultations, industrial audits, or operational engineering inquiries.</p>
-            <a href="mailto:your-email@example.com" class="btn">Contact Me</a>
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="diag-name">Name / Company</label>
+                        <input type="text" id="diag-name" name="Name" required placeholder="e.g. Plant Manager / Acme Corp">
+                    </div>
+                    <div class="form-group">
+                        <label for="diag-equipment">Equipment / Issue Summary</label>
+                        <textarea id="diag-equipment" name="Issue Details" rows="3" required placeholder="Describe machine type and current technical issue..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="diag-date">Preferred Visit Date</label>
+                        <input type="date" id="diag-date" name="Preferred Date">
+                    </div>
+                    <button type="submit" class="btn">Request Visit Appointment</button>
+                </form>
+            </div>
+
+            <!-- SECTION 2: Spare Parts & Equipment Purchase -->
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <h2>2. Spare Parts & Equipment Procurement</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Submit specifications or part details to source high-grade industrial machinery, mechanical spares, components, or custom engineering equipment.</p>
+                        <ul>
+                            <li>Industrial machinery & packaging spares sourcing</li>
+                            <li>Component verification & specification match</li>
+                            <li>Equipment supply & procurement assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="part-name">Name / Company</label>
+                        <input type="text" id="part-name" name="Name" required placeholder="e.g. Procurement Team / Facility Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="part-details">Part / Equipment Details</label>
+                        <textarea id="part-details" name="Part Specifications" rows="3" required placeholder="Include part number, brand, model, or technical specifications..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="part-qty">Quantity Needed</label>
+                        <input type="text" id="part-qty" name="Quantity" placeholder="e.g. 2 units / 10 pcs">
+                    </div>
+                    <button type="submit" class="btn">Inquire for Purchase</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
     <footer>
-        &copy; 2026 AEIS. All rights reserved.
+        &copy; 2026 AEIS — Ashraf Engineering & Industrial Solution. All rights reserved.
     </footer>
 
 </body>
